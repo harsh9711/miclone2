@@ -16,14 +16,11 @@ const NavOptios = ( {miPhones,redmiPhones,tv,laptop,fitnessAndLifeStyle,home,aud
 
    useEffect(() => {
      
-    console.log(window.location.href.slice(21),"abcd");
-    if(window.location.href.slice(21) === "/#miphones"){
-        // return
-           setMiPhoneToggle(true)
+    if(window.location.pathname === "/#miphones"){
+         return setMiPhoneToggle(true)
        }
-     if(window.location.href.slice(21) === "/#redmiphones"){
-        // return
-           setRedmiPhoneToggle(true)
+     if(window.location.pathname === "/#redmiphones"){
+        return setRedmiPhoneToggle(true)
        }
        if(window.location.pathname === "/#tv"){
         return   setTvToggle(true)

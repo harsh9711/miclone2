@@ -1,29 +1,39 @@
-import React from 'react'
-import "../styles/nav.css"
-const searchIcon = <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+import React from "react";
+import "../styles/nav.css";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+
 const Navbar = () => {
   return (
-    <div className="nav">
-    <div className="logo">
-        <a href="/">
-            <img id="logoImage" src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" alt="Not"/>
+    <div className="navbar">
+      <div className="navbar-left">
+        <a href="https://www.mi.com/in/">MI INDIA</a>
+        <span>|</span>
+        <a href="https://in.event.mi.com/in/install-mi-store">
+          GET MI STORE APP
         </a>
-        </div>
-          <a  className="navlinks" href="/#miphones">Mi Phones</a>
-          <a   className="navlinks"  href="/#redmiphones">Redmi Phones</a>
-          <a   className="navlinks" href="/#tv">TV</a>
-          <a   className="navlinks" href="/#laptops">Laptops</a>
-          <a   className="navlinks" href="/#lifestyle">Fitness & Lifestyle</a>
-          <a className="navlinks" href="/#home">Home</a>
-          <a   className="navlinks" href="/#audio">Radio</a>
-          <a   className="navlinks" href="/#accessories">Accessories</a>
-
-          <div  className="searchbox">
-          <input type="text" name="search"  placeholder="Search Products"/>           
-           {searchIcon}
-          </div>
-
+        <span>|</span>
+        <a href="https://www.mi.com/in/service/help/#category_id=1&pagenum=1&channel=1">
+          ONLINE HELP
+        </a>
+        <span>|</span>
+        <a href="https://www.mi.com/in/service/authorized_stores/">
+          RETAIL STORE
+        </a>
+      </div>
+      <div className="navbar-right">
+        <a href="https://store.mi.com/in/site/login">SIGN IN</a>
+        <span>|</span>
+        <a href="https://account.xiaomi.com/pass/register?callback=https%3A%2F%2Fstore.mi.com%2Fin%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Fin%26sign%3DNGQyZTY1M2VjNGNjYTc5NzFlZDc1YmY2ZmM2NDFiYWMwNTU5YzUyNQ%2C%2C&sid=i18n_in_pc_pro&_locale=en_IN">
+          SIGN UP
+        </a>
+        <span>|</span>
+        <a href="https://store.mi.com/in/cart" className="navbar-cart">
+          <ShoppingCartOutlinedIcon />
+          CART (0)
+        </a>
+      </div>
     </div>
-  )
-}
-export default Navbar
+  );
+};
+
+export default Navbar;

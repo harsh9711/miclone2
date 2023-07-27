@@ -19,7 +19,7 @@ function App()
   return (
     <Router>
       <PreNavbar />
-      <Navbar />
+      {/* <Navbar /> */}
       <NavOptios miPhones={data.miPhones} redmiPhones={data.redmiPhones} tv={data.tv} laptop={data.laptop}
         fitnessAndLifeStyle={data.fitnessAndLifeStyle} home={data.home} audio={data.audio} accessories={data.accessories}/>
       
